@@ -1,14 +1,14 @@
 class Orbital < Formula
   desc "Orbital CLI — authenticate and interact with the Orbital cloud service"
   homepage "https://github.com/danieldn-aramada/orbital"
-  version "0.0.17"
+  version "0.0.1"
 
   if Hardware::CPU.arm?
-    url "https://github.com/danieldn-aramada/orbital/releases/download/v0.0.17/orbital_v0.0.17_darwin_arm64.tar.gz"
-    sha256 "f63cf58534ddef2964f3224950f7558b9ebc4a3d4d742dffad884700e7038ae4"
+    url "https://github.com/danieldn-aramada/orbital/releases/download/cli/v0.0.1/orbital_v0.0.1_darwin_arm64.tar.gz"
+    sha256 "52e7dc77103676cfb9e62516d9c6362846c5af96b0012e50d661de766fb76004"
   else
-    url "https://github.com/danieldn-aramada/orbital/releases/download/v0.0.17/orbital_v0.0.17_darwin_amd64.tar.gz"
-    sha256 "1e5860cada4981e678dd928d45ce106a204db5ef77f3f2660065ff50ade10d92"
+    url "https://github.com/danieldn-aramada/orbital/releases/download/cli/v0.0.1/orbital_v0.0.1_darwin_amd64.tar.gz"
+    sha256 "dcf2aefd315433827498b4730c74d3688c8b27141af1e66b936e9688b3f2abd8"
   end
 
   def install
