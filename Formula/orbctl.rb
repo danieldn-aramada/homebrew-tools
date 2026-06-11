@@ -1,18 +1,18 @@
 class Orbctl < Formula
   desc "orbctl — CLI for the Orbital configuration management system"
   homepage "https://github.com/danieldn-aramada/orbital"
-  version "0.0.2"
+  version "0.0.3"
 
   if Hardware::CPU.arm?
-    url "https://github.com/danieldn-aramada/orbital/releases/download/cli/v0.0.2/orbital_v0.0.2_darwin_arm64.tar.gz"
-    sha256 "71b861197b895a883464627b1c2fa1e6e0b14e02ed7e0bc775eea5ebbb674164"
+    url "https://github.com/danieldn-aramada/orbital/releases/download/cli/v0.0.3/orbctl_v0.0.3_darwin_arm64.tar.gz"
+    sha256 "a6690d89606f0635653a9d61b9220b664dc46126259686cf6f134d0294989ced"
   else
-    url "https://github.com/danieldn-aramada/orbital/releases/download/cli/v0.0.2/orbital_v0.0.2_darwin_amd64.tar.gz"
-    sha256 "13a5f3ea7ee07ad6ae66b0b91d60340a767ec2da95a1d2adf3797ccc4767c5f2"
+    url "https://github.com/danieldn-aramada/orbital/releases/download/cli/v0.0.3/orbctl_v0.0.3_darwin_amd64.tar.gz"
+    sha256 "cfb994b347f74a5e6da41d6f9f75107582b07ac335425984699cf15464830887"
   end
 
   def install
-    bin.install "orbital" => "orbctl"
+    bin.install "orbctl"
     generate_completions_from_executable(bin/"orbctl", "completion")
   end
 
